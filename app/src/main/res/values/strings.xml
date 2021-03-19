@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">TUT Libraries</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="audiobooks">Audio-books</string>
+    <string name="ebooks">E-Books</string>
+    <string name="paper_books">Paper-based books</string>
+    <string name="available_resources">Available resources</string>
+    <string name="librarian">Talk to librarian</string>
+    <string name="lease_renewal">Renew leases</string>
+    <string name="our_services">Our services</string>
+    <string name="payfine">Pay fines</string>
+    <string name="track_orders">Order status</string>
+</resources>

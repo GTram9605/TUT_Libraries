@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="login">Login</string>
+    <string name="audiobooks">Audio-books</string>
+    <string name="paper_books">Paper-based books</string>
+    <string name="librarian">Talk to librarian</string>
+    <string name="lease_renewal">Renew leases</string>
+    <string name="our_services">Our services</string>
+    <string name="payfine">Pay fines</string>
+    <string name="track_orders">Order status</string>
+</resources>

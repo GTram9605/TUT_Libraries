@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1086560298590",
+    "project_id": "tut-libraries",
+    "storage_bucket": "tut-libraries.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1086560298590:android:cb4f35a073d45be94b76cf",
+        "android_client_info": {
+          "package_name": "za.ac.nplinnovations.tutlibraries"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1086560298590-u8s67pam3s04h3vcfpm5aqc7o9r2kbkg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDX3tZOO8Hvjcfkr6BMKD8r7wl24fIou9M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1086560298590-u8s67pam3s04h3vcfpm5aqc7o9r2kbkg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
