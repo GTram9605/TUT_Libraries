@@ -13,4 +13,6 @@
     <string name="our_services">Our services</string>
     <string name="payfine">Pay fines</string>
     <string name="track_orders">Order status</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="student_no">Student number</string>
 </resources>
