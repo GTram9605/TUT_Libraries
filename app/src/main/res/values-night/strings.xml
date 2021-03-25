@@ -9,4 +9,10 @@
     <string name="payfine">Pay fines</string>
     <string name="track_orders">Order status</string>
     <string name="student_no">Student number</string>
+    <string name="loading">Loading, please wait...</string>
+    <string name="bookTitle">Marketing Tourism in South Africa 6e</string>
+    <string-array name="CardType">
+        <item>Debit</item>
+        <item>Credit</item>
+    </string-array>
 </resources>

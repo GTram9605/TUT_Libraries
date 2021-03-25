@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical">
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/etCardNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Card Number"
+            android:imeActionId="6"
+            android:imeOptions="actionUnspecified"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@android:color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amount "
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/textSizeSmall"
+            android:textAllCaps="true"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="R"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/textSizeMedium"
+            android:textAllCaps="true"
+            android:layout_marginLeft="40dp"
+            android:layout_gravity="end|center_vertical"/>
+
+        <EditText android:id="@+id/etDonationAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/textSizeMedium"
+            android:textAllCaps="true"
+            android:inputType="numberDecimal"
+            android:layout_gravity="end|bottom"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1">
+            <EditText
+                android:id="@+id/etMMYY"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="MM/YY"
+                android:imeActionId="6"
+                android:imeOptions="actionUnspecified"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@android:color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+            <EditText
+                android:id="@+id/etCVTNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="CVV"
+                android:imeActionId="6"
+                android:imeOptions="actionUnspecified"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@android:color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Choose type of card "
+            android:textSize= "@dimen/textSizeMedium"
+            android:layout_gravity="right|bottom"
+            android:gravity="right|bottom"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@android:color/black" />
+
+        <Spinner android:id="@+id/spnnrCardType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_gravity="bottom"
+            android:textSize="@dimen/textSizeMedium"
+            android:entries="@array/CardType">
+        </Spinner>
+    </LinearLayout>
+</LinearLayout>

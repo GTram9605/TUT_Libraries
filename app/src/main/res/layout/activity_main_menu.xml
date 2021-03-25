@@ -37,6 +37,7 @@
                     android:padding="@dimen/button_corner_radius"
                     android:gravity="center"
                     android:background="@drawable/shape_buy_now"
+                    android:onClick="onClickAudiobook"
                     android:layout_weight="1"
                     android:orientation="vertical">
 
@@ -60,6 +61,7 @@
                     android:padding="@dimen/button_corner_radius"
                     android:gravity="center"
                     android:background="@drawable/shape_buy_now"
+                    android:onClick="onClickEBook"
                     android:layout_weight="1"
                     android:orientation="vertical">
 
@@ -123,6 +125,7 @@
                     android:gravity="center"
                     android:background="@drawable/shape_buy_now"
                     android:layout_weight="1"
+                    android:onClick="onClickTalkToLibrarian"
                     android:orientation="vertical">
 
                     <ImageView
@@ -145,6 +148,7 @@
                     android:padding="@dimen/button_corner_radius"
                     android:gravity="center"
                     android:background="@drawable/shape_buy_now"
+                    android:onClick="onClickRenewLease"
                     android:layout_weight="1"
                     android:orientation="vertical">
 
@@ -182,6 +186,7 @@
                     android:padding="@dimen/button_corner_radius"
                     android:gravity="center"
                     android:background="@drawable/shape_buy_now"
+                    android:onClick="onClickPayfines"
                     android:layout_weight="1"
                     android:orientation="vertical">
 

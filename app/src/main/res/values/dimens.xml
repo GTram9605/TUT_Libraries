@@ -20,14 +20,27 @@
     <dimen name="nav_header_height">230dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="fab_margin_half">8dp</dimen>
-    <dimen name="profileimage_size">96dp</dimen>
     <dimen name="textSizeTiny">10sp</dimen>
     <dimen name="textSizeSmall">12sp</dimen>
     <dimen name="textSizeMedium">18sp</dimen>
     <dimen name="textSizeLarge">24sp</dimen>
     <dimen name="textSizeTitle">34sp</dimen>
-    <dimen name="textSizeHeadine">60sp</dimen>
-    <!-- Default screen margins, per the Android Design guidelines. -->
-    <dimen name="fragment_horizontal_margin">16dp</dimen>
-    <dimen name="fragment_vertical_margin">16dp</dimen>
+    <dimen name="diver_height">1dp</dimen>
+    <dimen name="btn_border_height">4dp</dimen>
+    <dimen name="paddingBottom">90dp</dimen>
+    <dimen name="minTextWidth">60dp</dimen>
+    <dimen name="warning_icon_size">36</dimen>
+    <dimen name="icon_padding">20dp</dimen>
+    <dimen name="acc_item_size">130dp</dimen>
+    <dimen name="booking_item_pic">60dp</dimen>
+    <dimen name="toolbar_profile_width">90dp</dimen>
+    <dimen name="dimen_20dp">20dp</dimen>
+    <dimen name="activity_padding">16dp</dimen>
+    <dimen name="profile_title">23dp</dimen>
+    <dimen name="profile_desc">13dp</dimen>
+    <dimen name="meta_count">20dp</dimen>
+    <dimen name="meta_label">12dp</dimen>
+    <dimen name="dimen_40dp">40dp</dimen>
+    <dimen name="ic_plus_width">28dp</dimen>
+    <dimen name="formMargin">10dp</dimen>
 </resources>

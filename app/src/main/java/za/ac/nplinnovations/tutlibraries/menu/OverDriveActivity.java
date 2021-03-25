@@ -1,6 +1,7 @@
 package za.ac.nplinnovations.tutlibraries.menu;
 
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
@@ -8,6 +9,8 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
 import android.webkit.WebResourceRequest;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
@@ -23,13 +26,14 @@ public class OverDriveActivity extends AppCompatActivity {
     private String TAG = "OverDrive";
     private Intent intent;
     private WebView wvMain;
+    private AlertDialog alert;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_overdrive);
         this.wvMain = (WebView) findViewById(R.id.wvMain);
-        this.wvMain.loadUrl("http://mtnfanfootball.com/");
+        this.wvMain.loadUrl(getIntent().getStringExtra(MainMenuActivity.OVEDRIVEURL));
         this.wvMain.getSettings().setAllowContentAccess(true);
         this.wvMain.getSettings().setAllowFileAccess(true);
         this.wvMain.setVerticalScrollBarEnabled(true);
@@ -37,7 +41,13 @@ public class OverDriveActivity extends AppCompatActivity {
         this.wvMain.getSettings().setJavaScriptEnabled(true);
         this.wvMain.getSettings().setCacheMode(WebSettings.LOAD_NO_CACHE);
         this.wvMain.setWebViewClient(new WebViewClient() {
+            @Override
+            public void onPageFinished(WebView view, String url) {
+                showProgress(false);
+            }
+
             public boolean shouldOverrideUrlLoading(WebView webView, WebResourceRequest webResourceRequest) {
+                showProgress(true);
                 Uri url = webResourceRequest.getUrl();
                 if (Objects.equals(url.getScheme(), "whatsapp")) {
                     try {
@@ -92,6 +102,7 @@ public class OverDriveActivity extends AppCompatActivity {
     }
 
     /* access modifiers changed from: protected */
+    @Override
     public void onActivityResult(int i, int i2, @Nullable Intent intent2) {
         super.onActivityResult(i, i2, intent2);
         if (i == 1) {
@@ -101,5 +112,21 @@ public class OverDriveActivity extends AppCompatActivity {
                 Toast.makeText(this, "Permission denied to call phone.", Toast.LENGTH_SHORT).show();
             }
         }
+    }
+
+    public void showProgress(boolean status){
+        if(alert == null){
+            LayoutInflater inflater = this.getLayoutInflater();
+            final View view = inflater.inflate(R.layout.loading_activity, null);
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            builder.setCancelable(false);
+            builder.setView(view);
+            alert = builder.create();
+        }
+
+        if (status == true)
+            alert.show();
+        else
+            alert.dismiss();
     }
 }

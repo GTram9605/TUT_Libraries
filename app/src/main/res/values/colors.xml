@@ -10,4 +10,5 @@
     <color name="logo_red">#e41134</color>
     <color name="logo_blue">#005497</color>
     <color name="logo_yellow">#fdba0b</color>
+    <color name="colorBackground">#9B9B9B</color>
 </resources>
