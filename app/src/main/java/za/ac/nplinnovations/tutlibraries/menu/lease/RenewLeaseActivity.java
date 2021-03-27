@@ -14,12 +14,17 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.content.ContextCompat;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
+import java.util.Random;
 
 import za.ac.nplinnovations.tutlibraries.R;
+import za.ac.nplinnovations.tutlibraries.entities.Lease;
 import za.ac.nplinnovations.tutlibraries.menu.MainMenuActivity;
 
 public class RenewLeaseActivity extends AppCompatActivity {
@@ -77,6 +82,10 @@ public class RenewLeaseActivity extends AppCompatActivity {
 
 
     private void updateOnDB(String newStartDate, String newEndDate) {
+        DatabaseReference lease = FirebaseDatabase.getInstance().getReference("");
+        lease.push().setValue(new Lease(new Random().nextInt(99999999),
+                "9293823878328","214219280", newStartDate, newEndDate));
+
         new AlertDialog.Builder(RenewLeaseActivity.this)
                 .setTitle("Lease renewed")
                 .setMessage("New lease period starts from " + newStartDate + " until " + newEndDate)
