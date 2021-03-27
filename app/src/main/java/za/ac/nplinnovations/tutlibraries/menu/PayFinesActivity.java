@@ -85,6 +85,6 @@ public class PayFinesActivity extends AppCompatActivity {
     }
 
     private void processPayment(String cardNo, String cvv, String mmYY, double amount, View view) {
-        
+
     }
 }

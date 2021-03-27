@@ -9,8 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TUTLibraries">
-        <activity android:name=".menu.LibrarianActivity"></activity>
-        <activity android:name=".menu.books.BooksActivity"></activity>
+        <service
+            android:name=".notifications.MyFirebaseService"
+            android:enabled="true"
+            android:exported="true"></service>
+
+        <activity android:name=".menu.LibrarianActivity" />
+        <activity android:name=".menu.books.BooksActivity" />
         <activity android:name=".menu.PayFinesActivity" />
         <activity android:name=".menu.lease.RenewLeaseActivity" />
         <activity android:name=".menu.OverDriveActivity" />
@@ -23,7 +28,7 @@
         </activity>
         <activity android:name=".login.RegistrationActivity" />
         <activity android:name=".login.LoginActivity" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>
