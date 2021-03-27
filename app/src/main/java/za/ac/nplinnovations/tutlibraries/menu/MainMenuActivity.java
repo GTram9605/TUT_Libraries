@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import za.ac.nplinnovations.tutlibraries.R;
+import za.ac.nplinnovations.tutlibraries.menu.books.BooksActivity;
 import za.ac.nplinnovations.tutlibraries.menu.lease.RenewLeaseActivity;
 
 public class MainMenuActivity extends AppCompatActivity {
@@ -34,10 +35,14 @@ public class MainMenuActivity extends AppCompatActivity {
     }
 
     public void onClickTalkToLibrarian(View view) {
-
+        startActivity(new Intent(view.getContext(), LibrarianActivity.class));
     }
 
     public void onClickPayfines(View view) {
         startActivity(new Intent(view.getContext(), PayFinesActivity.class));
+    }
+
+    public void onClickPaperbooks(View view) {
+        startActivity(new Intent(view.getContext(), BooksActivity.class));
     }
 }

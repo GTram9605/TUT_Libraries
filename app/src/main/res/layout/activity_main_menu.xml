@@ -86,6 +86,7 @@
                     android:padding="@dimen/button_corner_radius"
                     android:gravity="center"
                     android:background="@drawable/shape_buy_now"
+                    android:onClick="onClickPaperbooks"
                     android:layout_weight="1"
                     android:orientation="vertical">
 

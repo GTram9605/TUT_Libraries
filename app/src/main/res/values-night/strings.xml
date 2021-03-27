@@ -11,6 +11,7 @@
     <string name="student_no">Student number</string>
     <string name="loading">Loading, please wait...</string>
     <string name="bookTitle">Marketing Tourism in South Africa 6e</string>
+    <string name="leasebook">Lease book</string>
     <string-array name="CardType">
         <item>Debit</item>
         <item>Credit</item>

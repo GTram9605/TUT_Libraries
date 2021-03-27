@@ -12,6 +12,7 @@ import za.ac.nplinnovations.tutlibraries.R;
 
 public class RegistrationActivity extends AppCompatActivity {
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,8 +24,10 @@ public class RegistrationActivity extends AppCompatActivity {
     }
 
     public void onClickRegister(View view) {
-        if(formValidated())
+        if(formValidated()){
             startActivity(new Intent(view.getContext(), LoginActivity.class));
+        }
+
     }
 
     private boolean formValidated() {

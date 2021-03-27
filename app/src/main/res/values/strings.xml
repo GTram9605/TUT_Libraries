@@ -30,8 +30,16 @@
     <string name="fine_title">Late return of book</string>
     <string name="date">Date: </string>
     <string name="payfine_text">Pay fine</string>
+    <string name="leasebook">Lease book</string>
+    <string name="isbn">ISBN: </string>
+    <string name="pages">Pages: </string>
+    <string name="time_tmp">18:36</string>
     <string-array name="CardType">
         <item>Debit</item>
         <item>Credit</item>
     </string-array>
+    <string name="myaccommodations">My Accommodations</string>
+    <string name="message_sent_text">Message sent!</string>
+    <string name="message_sent_error">Error, could not send blank message.</string>
+    <string name="librarian_text">Librarian</string>
 </resources>
