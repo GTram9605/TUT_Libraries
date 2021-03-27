@@ -67,7 +67,7 @@ public class PayFinesActivity extends AppCompatActivity {
                         amtDueString = etAmount.getText().toString();
 
                 double amount = Double.parseDouble(amtDueString);
-                //processPayment(cardNo, cvv, mmYY, amount, view);
+                processPayment(cardNo, cvv, mmYY, amount, view);
             }
         });
 
@@ -82,5 +82,9 @@ public class PayFinesActivity extends AppCompatActivity {
         builder.setCancelable(false);
         AlertDialog alert = builder.create();
         alert.show();
+    }
+
+    private void processPayment(String cardNo, String cvv, String mmYY, double amount, View view) {
+        
     }
 }

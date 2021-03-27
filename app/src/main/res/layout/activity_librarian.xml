@@ -19,6 +19,9 @@
             app:popupTheme="@style/Theme.TUTLibraries.PopupOverlay" />
 
     </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_librarian" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

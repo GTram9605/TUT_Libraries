@@ -77,7 +77,7 @@ public class LibrarianActivity extends AppCompatActivity {
 
             @Override
             public void onChildRemoved(@NonNull DataSnapshot dataSnapshot) {
-                messageList.add(dataSnapshot.getValue(Message.class));
+                messageList.remove(dataSnapshot.getValue(Message.class));
                 adapter.notifyDataSetChanged();
             }
 
@@ -103,7 +103,7 @@ public class LibrarianActivity extends AppCompatActivity {
             etMessage.setError("Cannot send blank text.");
         }else{
             messages.push().setValue(new Message("214219280", etMessage.getText().toString()
-            , new SimpleDateFormat("dd/MM/yyyy", Locale.getDefault()).format(new Date())
+            , new SimpleDateFormat("dd/MM/yyyy HH:MM", Locale.getDefault()).format(new Date())
             , true));
 
         }
