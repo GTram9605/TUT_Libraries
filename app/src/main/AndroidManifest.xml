@@ -9,26 +9,34 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TUTLibraries">
-        <service
-            android:name=".notifications.MyFirebaseService"
-            android:enabled="true"
-            android:exported="true"></service>
+<!--        <service-->
+<!--            android:name=".notifications.MyFirebaseService"-->
+<!--            android:enabled="true"-->
+<!--            android:exported="true"></service>-->
+
+        <service android:name=".notifications.MyFirebaseService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
 
         <activity android:name=".menu.LibrarianActivity" />
         <activity android:name=".menu.books.BooksActivity" />
-        <activity android:name=".menu.PayFinesActivity" />
+        <activity android:name=".menu.fines.PayFinesActivity" />
         <activity android:name=".menu.lease.RenewLeaseActivity" />
         <activity android:name=".menu.OverDriveActivity" />
         <activity android:name=".menu.MainMenuActivity">
+
+        </activity>
+        <activity android:name=".login.RegistrationActivity" />
+        <activity android:name=".login.LoginActivity" />
+        <activity android:name=".MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".login.RegistrationActivity" />
-        <activity android:name=".login.LoginActivity" />
-        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

@@ -42,4 +42,5 @@
     <string name="message_sent_text">Message sent!</string>
     <string name="message_sent_error">Error, could not send blank message.</string>
     <string name="librarian_text">Librarian</string>
+    <string name="default_notification_channel_id">"1086560298590"</string>
 </resources>

@@ -8,6 +8,7 @@ import android.view.View;
 
 import za.ac.nplinnovations.tutlibraries.R;
 import za.ac.nplinnovations.tutlibraries.menu.books.BooksActivity;
+import za.ac.nplinnovations.tutlibraries.menu.fines.PayFinesActivity;
 import za.ac.nplinnovations.tutlibraries.menu.lease.RenewLeaseActivity;
 
 public class MainMenuActivity extends AppCompatActivity {
